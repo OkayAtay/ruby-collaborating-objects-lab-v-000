@@ -16,7 +16,7 @@ class Song
   def self.new_by_filename(filename)
     binding.pry
     artist, song = filename.split(" - ")
-    new_song = Song.new(filename[1])
-    new_song.artist.name = filename[0]
+    new_song = self.new(song)
+    new_song.artist = artist
   end
 end
