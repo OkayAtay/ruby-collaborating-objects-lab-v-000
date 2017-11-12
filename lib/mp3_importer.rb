@@ -12,7 +12,7 @@ class MP3Importer
   def files
     binding.pry
     @files = []
-    @files ||= Dir[@path+"/*"].each{|file| file.split("./spec/fixtures/mp3s/")[1]}
+    @files ||= Dir[@path+"/*"].map{|file| file.split("./spec/fixtures/mp3s/")[1]}
 
   end
 
