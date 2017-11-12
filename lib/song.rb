@@ -17,7 +17,7 @@ class Song
     split_filename = filename.split(" - ")
     @artist = split_filename[0]
     @name = split_filename[1]
-    Song.new(split_filename)
+    Song.new(split_filename[1])
     #filename = filename.split(" - ")
     #Song.new(filename)
   end
